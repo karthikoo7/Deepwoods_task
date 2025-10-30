@@ -1,3 +1,4 @@
+Live Deployed Link: https://climate-action-spa.netlify.app/
 
 1. Problem Statement
 Climate change is a global crisis, but individual actions add up to powerful collective impact. To
@@ -50,3 +51,6 @@ Data is used only for verification and engagement.
 ● Backend logic can be simulated with Google Sheets or mock JSON data
 ● KPI counts should update dynamically or simulate this logic
 ● Pledge Wall should auto-populate new entries (mock acceptable)
+
+
+Live Deployed Link: https://climate-action-spa.netlify.app/
