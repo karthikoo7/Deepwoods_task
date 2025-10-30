@@ -1,0 +1,158 @@
+/* ==================================================
+   Climate Action Pledge Microsite
+   Author: [Your Name]
+   ================================================== */
+
+:root {
+  --accent:#0b7a6b;
+  --muted:#6b7280;
+  --bg:#f7faf9;
+  --card:#ffffff;
+}
+
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
+  background:linear-gradient(180deg,#f0fbf8 0%, #ffffff 100%);
+  color:#0f172a;
+}
+
+header.hero {
+  padding:48px 20px;
+  text-align:center;
+}
+
+.container { max-width:1000px; margin:0 auto; padding:0 16px; }
+
+h1 { font-size:clamp(24px,4vw,40px); margin:0 0 8px; }
+p.lead { color:var(--muted); font-size:1.05rem; margin:0 0 18px; }
+
+.cta {
+  display:inline-flex;
+  gap:12px;
+  align-items:center;
+  background:var(--accent);
+  color:white;
+  padding:12px 18px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+  box-shadow:0 6px 20px rgba(11,122,107,0.14);
+}
+
+.kpi-row {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:14px;
+  margin:20px 0;
+}
+
+.kpi {
+  background:var(--card);
+  padding:14px;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(16,24,40,0.04);
+  text-align:center;
+}
+
+.kpi .num { font-size:1.4rem; font-weight:700; }
+
+main { padding:20px 0; }
+section.card {
+  background:var(--card);
+  padding:18px;
+  border-radius:12px;
+  margin-bottom:18px;
+  box-shadow:0 8px 30px rgba(2,6,23,0.04);
+}
+
+form .grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:12px;
+}
+
+label { display:block; font-weight:600; margin-bottom:6px; }
+
+input[type=text], input[type=email], select {
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #e6eef0;
+}
+
+.small { font-size:0.85rem; color:var(--muted); }
+
+.commitments {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:12px;
+}
+
+.theme {
+  border:1px dashed #e6eef0;
+  padding:10px;
+  border-radius:8px;
+}
+
+.btn {
+  background:var(--accent);
+  color:white;
+  padding:10px 14px;
+  border-radius:8px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+}
+
+.form-footer {
+  margin-top:12px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+
+.cert {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+}
+
+canvas#certCanvas {
+  border-radius:8px;
+  box-shadow:0 10px 40px rgba(11,122,107,0.12);
+}
+
+.pledge-wall table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+.pledge-wall th, .pledge-wall td {
+  padding:8px;
+  text-align:left;
+  border-bottom:1px solid #f1f5f9;
+}
+
+.table-wrapper {
+  overflow:auto;
+  margin-top:12px;
+}
+
+footer {
+  padding:18px 0;
+  color:var(--muted);
+  font-size:0.9rem;
+  text-align:center;
+}
+
+/* Animations */
+.fade-up {
+  opacity:0;
+  transform:translateY(8px);
+  animation:fadeUp 700ms ease both;
+}
+@keyframes fadeUp { to { opacity:1; transform:none; } }

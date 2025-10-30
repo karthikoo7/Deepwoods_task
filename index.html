@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Climate Action Pledge</title>
+  <meta name="description" content="Take the Climate Action Pledge — join students and professionals committing to climate-positive habits.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div style="flex:1">
+      <h1 class="fade-up">Take the Climate Action Pledge</h1>
+      <p class="lead fade-up">
+        Small, daily commitments by millions of people create the momentum we need. 
+        Join students and professionals making measurable change.
+      </p>
+      <a class="cta" href="#pledge-form">🌿 Take the Pledge</a>
+    </div>
+
+    <div style="flex:1;min-width:240px">
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="small">Target Pledges</div>
+          <div class="num">1,000,000</div>
+        </div>
+        <div class="kpi">
+          <div class="small">Achieved Pledges</div>
+          <div id="achieved" class="num">0</div>
+        </div>
+        <div class="kpi">
+          <div class="small">Students</div>
+          <div id="studentsCount" class="num">0</div>
+        </div>
+        <div class="kpi">
+          <div class="small">Working Pros</div>
+          <div id="proCount" class="num">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <section class="card fade-up">
+    <h2>Why Take Climate Action?</h2>
+    <p class="small">
+      Every action—reducing waste, saving energy, choosing sustainable transport—adds up. 
+      Your individual commitment helps build social norms and demonstrates demand for systemic change. 
+      This pledge is a first step: visible, shareable, and backed by verification.
+    </p>
+  </section>
+
+  <section id="pledge-form" class="card fade-up">
+    <h2>Make your Pledge</h2>
+    <form id="form">
+      <div class="grid">
+        <div>
+          <label for="name">Name *</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div>
+          <label for="email">Email * <span class="small">(private)</span></label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div>
+          <label for="mobile">Mobile Number * <span class="small">(for validation)</span></label>
+          <input id="mobile" name="mobile" type="text" pattern="[0-9+\\-\\s]{7,15}" required>
+        </div>
+        <div>
+          <label for="state">State</label>
+          <select id="state" name="state" required>
+  <option value="">Select State / UT</option>
+  
+  <!-- States -->
+  <option>Andhra Pradesh</option>
+  <option>Arunachal Pradesh</option>
+  <option>Assam</option>
+  <option>Bihar</option>
+  <option>Chhattisgarh</option>
+  <option>Goa</option>
+  <option>Gujarat</option>
+  <option>Haryana</option>
+  <option>Himachal Pradesh</option>
+  <option>Jharkhand</option>
+  <option>Karnataka</option>
+  <option>Kerala</option>
+  <option>Madhya Pradesh</option>
+  <option>Maharashtra</option>
+  <option>Manipur</option>
+  <option>Meghalaya</option>
+  <option>Mizoram</option>
+  <option>Nagaland</option>
+  <option>Odisha</option>
+  <option>Punjab</option>
+  <option>Rajasthan</option>
+  <option>Sikkim</option>
+  <option>Tamil Nadu</option>
+  <option>Telangana</option>
+  <option>Tripura</option>
+  <option>Uttar Pradesh</option>
+  <option>Uttarakhand</option>
+  <option>West Bengal</option>
+
+  <!-- Union Territories -->
+  <option>Andaman and Nicobar Islands</option>
+  <option>Chandigarh</option>
+  <option>Dadra and Nagar Haveli and Daman and Diu</option>
+  <option>Delhi</option>
+  <option>Jammu and Kashmir</option>
+  <option>Ladakh</option>
+  <option>Lakshadweep</option>
+  <option>Puducherry</option>
+</select>
+
+        </div>
+        <div>
+          <label for="profile">Profile Type</label>
+          <select id="profile" name="profile">
+            <option>Student</option>
+            <option>Working Professional</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <h3 style="margin-top:12px">Commitment Themes (choose any)</h3>
+      <div class="commitments">
+        <div class="theme">
+          <strong>Reduce Waste</strong>
+          <div><label><input type="checkbox" name="commit" value="Use reusable bags"> Use reusable bags</label></div>
+          <div><label><input type="checkbox" name="commit" value="Avoid single-use plastics"> Avoid single-use plastics</label></div>
+          <div><label><input type="checkbox" name="commit" value="Compost organic waste"> Compost organic waste</label></div>
+        </div>
+        <div class="theme">
+          <strong>Save Energy</strong>
+          <div><label><input type="checkbox" name="commit" value="Switch to LEDs"> Switch to LEDs</label></div>
+          <div><label><input type="checkbox" name="commit" value="Unplug idle devices"> Unplug idle devices</label></div>
+          <div><label><input type="checkbox" name="commit" value="Use energy-efficient appliances"> Use energy-efficient appliances</label></div>
+        </div>
+        <div class="theme">
+          <strong>Sustainable Travel</strong>
+          <div><label><input type="checkbox" name="commit" value="Walk or cycle for short trips"> Walk or cycle for short trips</label></div>
+          <div><label><input type="checkbox" name="commit" value="Use public transport"> Use public transport</label></div>
+          <div><label><input type="checkbox" name="commit" value="Carpool whenever possible"> Carpool whenever possible</label></div>
+        </div>
+      </div>
+
+      <div class="form-footer">
+        <button class="btn" type="submit">Submit Pledge</button>
+        <div class="small">By submitting you agree to our <a href="#privacy">privacy note</a>.</div>
+      </div>
+    </form>
+  </section>
+
+  <section id="certificate" class="card fade-up">
+    <h2>Your Certificate</h2>
+    <div id="certArea" class="cert">
+      <div class="small">After submitting the pledge, your personalized certificate will appear here.</div>
+      <canvas id="certCanvas" width="800" height="450" style="max-width:100%"></canvas>
+      <div class="cert-buttons">
+        <button id="downloadCert" class="btn" disabled>Download Certificate</button>
+        <button id="shareCert" class="btn" disabled>Copy Share Link</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="card fade-up pledge-wall">
+    <h2>Public Pledge Wall</h2>
+    <div class="small">Names and public details of recent pledges. Emails and mobiles are private.</div>
+    <div class="table-wrapper">
+      <table id="pledgeTable">
+        <thead>
+          <tr><th>Pledge ID</th><th>Name</th><th>Date</th><th>State</th><th>Profile</th><th>Love</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="privacy" class="card fade-up">
+    <h3>Privacy Note</h3>
+    <p class="small">
+      Mobile Number and Email are required for validation but never shown publicly. 
+      Data is used only for verification and engagement.
+    </p>
+  </section>
+
+  <footer class="fade-up">
+    <div class="small">Made with Eco-love.</div>
+  </footer>
+
+</main>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
