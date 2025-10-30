@@ -1,9 +1,4 @@
-/* ==================================================
-   Climate Action Pledge Microsite
-   Author: [Your Name]
-   ================================================== */
 
-// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
